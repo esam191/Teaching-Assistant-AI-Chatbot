@@ -8,7 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - assignments
+  
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -19,6 +20,9 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_assignments:
+    - text: "You have 6 assignments in total for this course!"
 
   utter_happy:
   - text: "Great, carry on!"
