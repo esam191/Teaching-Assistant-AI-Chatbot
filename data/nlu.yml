@@ -52,6 +52,7 @@ nlu:
 
 - intent: mood_great
   examples: |
+    - good
     - perfect
     - great
     - amazing
@@ -97,3 +98,35 @@ nlu:
     - number of assignments
     - total assignments
     - count of assignments
+
+- intent: which_assignments
+  examples: |
+    -What are the assignments?
+    -What do I need to do for each assignment?
+    -explain the assignments
+    -describe assignments
+    -what is each assignment?
+
+- intent: assignment_worth
+  examples: |
+    - how much are assignments worth
+    - percent worth of each assignment?
+    - what percent are the assignments?
+    - assignment total from my overall grade?
+
+- intent: exams
+  examples: |
+    - How many tests?
+    - how many exams?
+    - any quizzes?
+    - how many midterms?
+    - number of midterms?
+    - total quizzes
+    - count of exams
+
+- intent: exams_worth
+  examples: | 
+    - how much are exams worth
+    - percent worth of each exam?
+    - what percent are the exams?
+    - exam total from my overall grade?

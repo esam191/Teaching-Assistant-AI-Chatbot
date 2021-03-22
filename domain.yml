@@ -9,6 +9,10 @@ intents:
   - mood_unhappy
   - bot_challenge
   - assignments
+  - which_assignments
+  - assignment_worth
+  - exams
+  - exams_worth
   
 responses:
   utter_greet:
@@ -22,7 +26,19 @@ responses:
   - text: "Did that help you?"
 
   utter_assignments:
-    - text: "You have 6 assignments in total for this course!"
+  - text: "You have 3 assignments in total for this course!"
+
+  utter_exams:
+  - text: "You have 3 quizzes, 1 midterm and 1 final exam in total for this course!"
+
+  utter_assignment_desc:
+  - text: "For assignment 1, you have to improve quality of a software. For assignment 2, you have to implement program slicing to that software. Lastly, for assignment 3 you must add instrumentation to your code!"
+
+  utter_assignment_worth: 
+  - text: "The assignments are worth 30% of your overall grade, so each assignment is worth 10%. Make sure to submit them all in time!!"
+
+  utter_exams_worth: 
+  - text: "The quizzes are worth 15% of your overall grade, the mideterm 10%, and the final exam 25%. Good luck with your studying!!"
 
   utter_happy:
   - text: "Great, carry on!"

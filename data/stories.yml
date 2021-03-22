@@ -9,6 +9,17 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+- story: exams path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: exams
+  - action: utter_exams
+  - intent: exams_worth
+  - action: utter_exams_worth
+
 - story: assignments path 1
   steps:
   - intent: greet
@@ -17,6 +28,22 @@ stories:
   - action: utter_happy
   - intent: assignments
   - action: utter_assignments
+  - intent: assignment_worth
+  - action: utter_assignment_worth
+
+- story: assignments path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: which_assignments
+  - action: utter_assignment_desc
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: assignment_worth
+  - action: utter_assignment_worth
 
 - story: sad path 1
   steps:
