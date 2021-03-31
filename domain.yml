@@ -13,10 +13,30 @@ intents:
   - assignment_worth
   - exams
   - exams_worth
+  - givename
+  - request_name
+
+forms:
+  name_form:
+    name:
+    - type: from_text
+
+slots: 
+  name:
+    type: text
   
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi, how are you?"
+
+  utter_ask_name:
+  - text: "Hi, what is your name?"
+
+  utter_submit: 
+  - text: "Okay, thanks!"
+
+  utter_slots_values:
+  - text: "I will remember your name, {name}!"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -38,10 +58,15 @@ responses:
   - text: "The assignments are worth 30% of your overall grade, so each assignment is worth 10%. Make sure to submit them all in time!!"
 
   utter_exams_worth: 
-  - text: "The quizzes are worth 15% of your overall grade, the mideterm 10%, and the final exam 25%. Good luck with your studying!!"
+  - text: "The quizzes are worth 15% of your overall grade, the midterm 10%, and the final exam 25%. Good luck with your studying!!"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Great, is there anything I can help you with?"
+  - text: "Perfect, keep going!"
+
+  utter_ask:
+  - text: "Well, what is it?\n"
+  - text: "What do you want to know?\n"
 
   utter_goodbye:
   - text: "Bye"

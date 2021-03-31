@@ -8,13 +8,37 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: affirm 
+  - action: utter_ask
 
-- story: exams path 1
+- story: happy path 2
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: deny 
+  - action: utter_goodbye
+
+- story: name path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_name
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: esam
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+
+- story: exams path 1
+  steps:
   - intent: exams
   - action: utter_exams
   - intent: exams_worth
@@ -22,10 +46,6 @@ stories:
 
 - story: assignments path 1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
   - intent: assignments
   - action: utter_assignments
   - intent: assignment_worth
@@ -33,17 +53,11 @@ stories:
 
 - story: assignments path 2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
   - intent: which_assignments
   - action: utter_assignment_desc
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-  - intent: assignment_worth
-  - action: utter_assignment_worth
 
 - story: sad path 1
   steps:

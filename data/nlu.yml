@@ -130,3 +130,16 @@ nlu:
     - percent worth of each exam?
     - what percent are the exams?
     - exam total from my overall grade?
+
+- intent: givename
+  examples: | 
+    - esam
+    - matt
+    - rachel
+    - kate
+
+- intent: request_name
+  examples: | 
+    - can i give my name
+    
+    
