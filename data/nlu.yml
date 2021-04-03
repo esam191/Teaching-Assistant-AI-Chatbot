@@ -141,5 +141,28 @@ nlu:
 - intent: request_name
   examples: | 
     - can i give my name
+    - do you want to know my name
+    - what is my name
+    - you should know my name
     
-    
+- intent: course_desc
+  examples: |
+    -What is the course?
+    -explain the course
+    -describe the course
+    -can you give a course description?
+
+- intent: contact_prof
+  examples: | 
+    - how can i contact the professor?
+    - what is the professors email?
+    - can you provide prof contact information?
+    - can i call the professor?
+    - what is the professor's phone #?
+
+- intent: office_hours
+  examples: | 
+    - what are professor office hours?
+    - when are office hours?
+    - when are TA office hours?
+    - tell me the office hours

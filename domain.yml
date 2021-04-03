@@ -15,6 +15,9 @@ intents:
   - exams_worth
   - givename
   - request_name
+  - course_desc
+  - contact_prof
+  - office_hours
 
 forms:
   name_form:
@@ -67,6 +70,15 @@ responses:
   utter_ask:
   - text: "Well, what is it?\n"
   - text: "What do you want to know?\n"
+
+  utter_course:
+  - text: "Network  history  and  architectures;  reference  Model  for  Open  Systems  Interconnection  (OSI)"
+
+  utter_office_hours:
+  - text: "Professor Office Hours: Monday and Wednesday from 2 to 3 pm; TA Office Hours: Tuesday from 12 to 1 pm"
+
+  utter_prof: 
+  - text: "You can contact to the professor by phone and email. Prof Phone #: (905) 721-8663 x.2543; Prof Email: george@ontariotechu.ca"
 
   utter_goodbye:
   - text: "Bye"

@@ -57,12 +57,30 @@ stories:
 #   - action: utter_submit
 #   - action: utter_slots_values
 
-- story: exams path 1
+- story: exams path 
   steps:
   - intent: exams
   - action: utter_exams
   - intent: exams_worth
   - action: utter_exams_worth
+
+- story: contact professor path 
+  steps:
+  - intent: contact_prof
+  - action: utter_prof
+  - intent: office_hours
+  - action: utter_office_hours
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: course path 
+  steps:
+  - intent: course_desc
+  - action: utter_course
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
 
 - story: assignments path 1
   steps:
