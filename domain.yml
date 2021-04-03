@@ -36,7 +36,7 @@ responses:
   - text: "Okay, thanks!"
 
   utter_slots_values:
-  - text: "I will remember your name, {name}!"
+  - text: "How are you, {name}?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"

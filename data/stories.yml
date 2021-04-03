@@ -5,26 +5,6 @@ stories:
 - story: happy path
   steps:
   - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: affirm 
-  - action: utter_ask
-
-- story: happy path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: deny 
-  - action: utter_goodbye
-
-- story: name path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: request_name
   - action: name_form
   - active_loop: name_form
   - slot_was_set:
@@ -36,6 +16,46 @@ stories:
   - active_loop: null
   - action: utter_submit
   - action: utter_slots_values
+  - intent: mood_great
+  - action: utter_happy
+  - intent: affirm 
+  - action: utter_ask
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: esam
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+  - intent: mood_great
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: name path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: request_name
+#   - action: name_form
+#   - active_loop: name_form
+#   - slot_was_set:
+#     - requested_slot: name
+#   - slot_was_set:
+#     - name: esam
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: utter_submit
+#   - action: utter_slots_values
 
 - story: exams path 1
   steps:
@@ -59,10 +79,16 @@ stories:
   - intent: affirm
   - action: utter_happy
 
+- story: assignments path 3
+  steps:
+  - intent: which_assignments
+  - action: utter_assignment_desc
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask
+
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -71,8 +97,6 @@ stories:
 
 - story: sad path 2
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
