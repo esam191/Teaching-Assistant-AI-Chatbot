@@ -92,9 +92,9 @@ responses:
   utter_office_hours:
   - text: 'Professor Office Hours: Monday and Wednesday from 2 to 3 pm; TA Office Hours: Tuesday from 12 to 1 pm'
   utter_prof:
-  - text: 'You can contact to the professor by phone and email. Prof Phone #: (905) 721-8663 x.2543; Prof Email: george@ontariotechu.ca'
+  - text: 'You can contact the professor by phone and email. Prof Phone #: (905) 721-8663 x.2543; Prof Email: george@ontariotechu.ca'
   utter_lecture:
-  - text: 'You have lectures on Tuesdays and Thursdays at 11:10 am to 12:30 pm'
+  - text: You have lectures on Tuesdays and Thursdays at 11:10 am to 12:30 pm
   utter_grade:
   - text: 'Here is the grade breakdown: Quizzes: 15%---Assignments: 30%---Midterm: 20%---Final: 35%'
   utter_textbook:
