@@ -81,6 +81,30 @@ stories:
   - intent: affirm
   - action: utter_happy
 
+- story: lecture path 
+  steps:
+  - intent: lecture_time
+  - action: utter_lecture
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: grade path 
+  steps:
+  - intent: evaluation_method
+  - action: utter_grade
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: textbook path 
+  steps:
+  - intent: textbook
+  - action: utter_textbook
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
 - story: assignments path 1
   steps:
   - intent: assignments

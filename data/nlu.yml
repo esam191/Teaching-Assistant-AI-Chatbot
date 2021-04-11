@@ -15,6 +15,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - yo
+    - whatup
+    - whats up
 - intent: goodbye
   examples: |
     - good afternoon
@@ -38,6 +41,7 @@ nlu:
     - correct
     - Yes sirrrr i wil
     - yeah kinda
+    - aight cool
 - intent: deny
   examples: |
     - no
@@ -155,3 +159,23 @@ nlu:
     - when are office hours?
     - when are TA office hours?
     - tell me the office hours
+- intent: lecture_time
+  examples: |
+    - what are the lecture timings?
+    - when are my lectures?
+    - what days do I have lectures?
+    - what time are my lectures?
+- intent: evaluation_method
+  examples: |
+    - what does the course grade breakdown look like?
+    - what is the evaluation method?
+    - how is each grade category worth?
+    - can you break down the coure grades?
+- intent: textbook
+  examples: |
+    - What textbook do I need to purchase for this course?
+    - How many textbooks do I have?
+    - What textbooks should I buy?
+    - Name all required textbooks?
+
+
